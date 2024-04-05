@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>LotAn</title>
+</head>
+<body onload="mueveReloj()"  >
+    <div class="conteiner" id="conteiner">
+
+        <div class="conteiner-Ticket">
+
+            <div class="conteiner-imp" id="conteiner-imp">
+
+                <div class="imp">
+                    <div class="conteiner-title-i">
+                        <h2>REIMPRESION</h2>
+                        <h2>Vendedor: 7705</h2>
+                        <h2>Ticket: 66547</h2>
+                    </div>
+                    <div class="conteiner-hour-date">
+                        <div class="hour-date-i">
+                            <h2 >Fecha</h2>
+                            <h2 id="fecha-ticket"></h2>
+                        </div>
+
+                        <div class="hour-date-i">
+                            <h2  id="fecha-i" >Hora</h2>
+                            <h2 id="hora-ticket"></h2>
+                        </div>
+                    </div>
+                    <div id="conteiner-move-number-total">
+                        
+                    </div>
+                    <div class="conteiner-moves-total">
+                        <div class="moves-total-pay">
+                            <h2>Total: </h2>
+                            <h2 id="moves-total-pay"></h2>
+                        </div>
+                      <div class="move-code">
+                          <h3>65691da25baa18bb2db0ecbf</h3>
+                      </div>
+                      
+                   
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="conteiner-main">
+
+            <div class="conteiner-navbar">
+           
+                    <div class="navbar">
+                        <div class="calendar">
+                            <i class="fa fa-calendar" ></i>
+                        </div>
+                        <form name="form_date">
+                            <input type="text" name="date" size="6" class="myclock">
+                        </form>
+                    </div>
+                    <div class="navbar">
+                            <div class="btn-reset">
+                                <h2 id="btn-reset">Resetear Datos</h2>
+                            </div>
+                    </div>
+                    <div class="navbar">
+                        <div class="btn-reset">
+                            <h2 id="btn-imp">Imprimir Ticket</h2>
+                        </div>
+                </div>
+                
+                    <div class="navbar">
+                        <div  class="clock" >
+                            <i class="fa fa-clock-o" style="font-size:30px"></i>
+                        </div> 
+                            <form name="form_reloj">
+                            <input type="text" name="reloj" size="6" class="myclock">
+                            </form>
+                    </div>
+                 
+
+            </div>
+                
+
+            <div class="main">
+            
+                <div class="conteiner-select" id="conteiner-select">
+                   
+                    <div class="hour">
+                        <div class="conteiner-all">
+                            <input type="checkbox" id="todos" class="mycheck">
+                           <label for="todos">Todos</label>
+                        </div>
+                        <div class="conteiner-input-hour">
+                             <div class="input-hour">
+                                <input type="checkbox" id="matutino" class="mycheck">
+                                <label for="matutino">10:15</label>
+                            </div>
+                            <div class="input-hour">
+                                <input type="checkbox" id="despertino" class="mycheck">  
+                                 <label for="despertino">12:00</label>
+                            </div>
+                            <div class="input-hour">
+                                 <input type="checkbox" id="mediatarde" class="mycheck">   
+                                <label for="mediatarde">15:00</label>
+                            </div>
+                            <div class="input-hour">
+                                <input type="checkbox" id="tarde" class="mycheck">
+                                <label for="tarde">18:00</label>
+                            </div>
+                            <div class="input-hour">
+                                <input type="checkbox" id="noche" class="mycheck">
+                                <label for="noche">21:00</label>
+                            </div>
+                        </div>
+
+                    </div>
+                     
+                    <div class="loteria">
+                        <div class="title">
+                            <label for="nac">NAC</label>
+                            <label for="pro">PRO</label>
+                            <label for="cte">CTE</label>
+                            <label for="ste">STE</label>
+                            <label for="cor">COR</label>
+                            <label for="rio">RIO</label>
+                            <label for="oro">ORO</label>
+
+                        </div>
+
+                        <div class="conteiner-input-lot">
+
+                            <div class="input-lot">
+                                <div class="input-check">
+                                    <input type="checkbox" id="nac" class="mycheck">
+                                </div> 
+                                <div class="input-check">
+                                   <input type="checkbox" id="pro" class="mycheck">      
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="cte" class="mycheck">
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="ste" class="mycheck">
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="cor" class="mycheck">
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="rio" class="mycheck">
+                               </div>
+                               <div class="input-check">  
+                               </div>
+                            </div>
+
+                            <div class="input-lot">
+                                <div class="input-check">
+                                    <input type="checkbox" id="nac1" class="mycheck">
+                                </div> 
+                                <div class="input-check">
+                                   <input type="checkbox" id="pro1" class="mycheck">      
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="cte1" class="mycheck">
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="ste1" class="mycheck">
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="cor1" class="mycheck">
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="rio1" class="mycheck">
+                               </div>
+                               <div class="input-check">
+                               </div>
+                            </div>
+                            <div class="input-lot">
+                                <div class="input-check">
+                                    <input type="checkbox" id="nac2"class="mycheck" >
+                                </div> 
+                                <div class="input-check">
+                                   <input type="checkbox" id="pro2"class="mycheck" >      
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="cte2"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="ste2"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="cor2"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="rio2"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                <input type="checkbox" id="oro2"class="mycheck" >
+                               </div>
+                            </div>
+                            <div class="input-lot">
+                                <div class="input-check">
+                                    <input type="checkbox" id="nac3"class="mycheck" >
+                                </div> 
+                                <div class="input-check">
+                                   <input type="checkbox" id="pro3"class="mycheck" >      
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="cte3"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="ste3"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="cor3"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="rio3"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                               
+                               </div>
+                            </div>
+                            <div class="input-lot">
+                                <div class="input-check">
+                                    <input type="checkbox" id="nac4"class="mycheck" >
+                                </div> 
+                                <div class="input-check">
+                                   <input type="checkbox" id="pro4"class="mycheck" >      
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="cte4"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="ste4"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="cor4"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="rio4"class="mycheck" >
+                               </div>
+                               <div class="input-check">
+                                   <input type="checkbox" id="oro4"class="mycheck" >
+                               </div>
+                            </div>
+                       
+                        </div>
+                      
+                    </div>
+                   
+                </div>
+                <div class="conteiner-details-lot">
+                    <h2>
+                        Loterias :
+                    </h2>
+                    <p id="loterias"></p>
+
+
+                </div>
+                <div class="conteiner-move">
+              
+                        <div class="conteiner-move-title">
+                            <h2>
+                                Jugadas
+                            </h2>
+                        </div>
+                        <div class="move">
+                            <div class="move-title">
+                                <label for="numero" id="numberl">Numero</label>
+                            </div>
+                            <div class="move-title">
+                                <label for="posicion" >Posicion</label>
+                            </div>
+                            <div class="move-title">
+                                <label for="impote">Importe</label>
+                            </div>
+                        </div>
+    
+                        <div  class="move">   
+                            <div class="move-amount">
+                                <input type="number"   min=0 max="9999" id="numer-moves" tabindexgt="1">
+                            </div>
+                            <div class="move-amount">
+                                <input type="number"  min=0 max="20" id="position-moves"  value="1" tabindexdxfiltro="1">
+                            </div>
+                            <div class="move-amount">
+                                <input type="number"   min=0 max="99999" id="pay-moves" tabindexgt="2" >
+                            </div>
+                                
+                        </div>
+                        
+                </div>
+                <div class="conteiner-move">
+              
+                    <div class="conteiner-move-title">
+                        <h2>
+                            Redoblona
+                        </h2>
+                    </div>
+                    <div class="move">
+                        <div class="move-title">
+                            <label for="numero">Numero</label>
+                        </div>
+                        <div class="move-title">
+                            <label for="posicion">Posicion</label>
+                        </div>
+                        <div class="move-title">
+                            <label for="impote">Por Afuera</label>
+                        </div>
+                    </div>
+
+                    <div  class="move">   
+                        <div class="move-amount">
+                            <input type="number"  min=0 max="9999" id="numer-move-redoblona">
+                        </div>
+                        <div class="move-amount">
+                            <input type="number" min=0 max="20"id="position-move-redoblona" >
+                        </div>
+                        <div class="move-amount">
+                                <input type="checkbox" id="check-move-redoblona">
+                        </div>
+                     </div>       
+                </div>
+         
+
+                <div class="btn" >
+                    <h2 id="btn">
+                       Agregar jugada
+                    </h2>
+                </div>
+            </div>
+            <div class="conteiner-data-tabla">
+              
+
+            </div>
+           
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+</html>

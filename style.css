@@ -1,0 +1,457 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+html,body{
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(0, 0, 0);
+    color: #ffffff;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Quicksand', sans-serif;   
+}
+
+.conteiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-navbar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    width: 33.33%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-main{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.conteiner-select{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.conteiner-all{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-input-hour{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-hour{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loteria{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.input-lot{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-check{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+
+.conteiner-input-lot{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    width:100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.title label{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-move{
+    width:100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-move-title{
+    width:80%;
+    height: 50%;
+    font-size: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.move{
+    width:80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+}
+.move-title{
+    width:30%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+}
+.move-amount{
+    width:30%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    
+}
+.move-amount input{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    font-size: 100%;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width:100%;
+    height:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+   cursor: pointer;
+    margin-top: 3%;
+}
+
+.btn h2{
+    width:80%;
+    height:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color:#ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color:  rgb(33, 33, 202, 0.8);
+    transition: all 0.5s ease-in-out;   
+    font-size: 100%;
+}
+.conteiner-details-lot{
+    width: 80%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.conteiner-details-lot h2{
+    width: 15%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 100%;
+ 
+}
+.conteiner-details-lot p{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 100%;
+}
+
+
+  .mycheck {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+    color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    appearance: none;
+    border: 3px solid #001aff;
+    background-position: 0 -2rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.1s ease-in-out;
+  }
+  .mycheck:checked {
+    background-color: #001aff;
+    color: #001aff;
+    background-position: 0 0;
+  } 
+  .myclock{
+    width: 100%;
+    border: 0;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0);
+  }
+  .navbar i{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    font-size: 22px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0);
+    
+  }
+  
+.alert-check-lot{
+    border: 2px solid red;
+    
+}
+.disable-check-lot{
+    border: 2px solid rgb(111, 110, 110);  
+}
+
+
+input::placeholder{
+    width: 100%;
+    font-size: 12px;
+    color:red;  
+}
+/*******************************************************/
+.conteiner-imp{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+}
+.imp{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.conteiner-title-i{
+    width: 95%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-title-i h2{
+    margin: 0%;
+    color: black;
+    
+}
+.conteiner-hour-date{
+    width: 95%;
+    height: 15%;
+    display: flex;
+    margin-bottom: 10px;
+}
+.hour-date-i{
+    width: 50%;
+    height: 100%;
+}
+.hour-date-i h2{
+    width: 100%;
+    height: 50%;
+    margin: 0%;
+    padding: 0%;
+    font-size: 16px;
+    display: flex;
+    align-items: end;
+    color: black;
+}
+#fecha-i,#hora-ticket{
+    width: 100%;
+    height: 50%;
+    margin: 0%;
+    padding: 0%;
+    font-size: 16px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    color: black;
+
+}
+
+
+.conteiner-moves-total{
+    width: 95%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   border-top: 3px solid black;
+}
+.moves-total-pay {
+    width: 95%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moves-total-pay h2{
+    width: 40%;
+    color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin: 0%;
+    padding: 0%;
+}
+.move-code{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.move-code h3{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+}
+#conteiner-move-number-total{
+    width: 95%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-Ticket{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;   
+}
+.btn-reset{
+    width: 55%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color:  rgb(33, 33, 202, 0.8);
+    border: 1px solid white;
+    transition: all 0.55s ease-in-out;
+}
+.btn-reset h2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+}
+
+.btn-reset:hover{
+    background-color:  rgb(255, 255, 255);
+    color: rgb(33, 33, 202);
+    border: 1px solid rgb(33, 33, 202);
+    cursor: pointer;
+}
