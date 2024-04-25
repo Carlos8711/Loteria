@@ -115,7 +115,7 @@ let POR
 let CL=0
 let C=0
 let start=false
-let  total=0
+let total=0
 let inp=0
 
 
@@ -1090,8 +1090,7 @@ function viewdatafileextra(char){
     }
     mostrar = loterias.innerText = auxmostrar;
     mostrar=loterias.innerText += auxfile;
-    console.log(srtshort)
-
+ 
 }
 
 
@@ -1355,7 +1354,7 @@ if(hora<10){
   
 }
 
-/******************************************************************************************* */
+/******************************************************************************************* *
 function validateInput(hora,minuto){
 
     let iniciar=Date("08:15:00")
@@ -1596,7 +1595,7 @@ function validateInput(hora,minuto){
          todos.checked=false
          noche.checked=false
     }
-}
+}**** */
 /***************************VALIDTE COMPLET*************************************** */
 function validAll(){
 
