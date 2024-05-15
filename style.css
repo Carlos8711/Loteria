@@ -463,24 +463,8 @@ input::placeholder{
         display: none;
     }
 }
-/*Fin Escritorio*/
 
-/*Tablet*/
-/*Portrait*/
-/*@media (max-width: 351px) and (orientation:portrait) {
-    body{background: orange;}
-}*/
-
-/*landscape*/
-/* @media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
-   body{background: blue;}
-}*/
-/*fin tablet*/
-
-/*movil*/
-/*Portrait*/
-/*Default*/
-@media (min-width: 200.98px)and (max-width: 991.98px) and (orientation:portrait) {
+@media (min-width: 150.98px)and (max-width: 991.98px) and (orientation:portrait) {
 
     body{/*background: green;*/  overflow-y: scroll;
     height: 150%;}
