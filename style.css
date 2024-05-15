@@ -463,8 +463,54 @@ input::placeholder{
         display: none;
     }
 }
+@media (max-width: 573.98px)  and (orientation:portrait) {
+    
+        body{background: red;}
+        body{/*background: green;*/  overflow-y: scroll;
+            height: 150%;}
+        
+            .conteiner{
+                flex-direction: column;
+            }
+            .conteiner-main{
+                width: 100%;
+            }
+            .conteiner-imp{
+                width: 60%;
+            }
+          
+            .conteiner-Ticket{
+                width: 100%;
+            }
+            .calendar i,.clock i,.navbar input{
+                display: none;
+            }
+            .conteiner-navbar{
+            height: 100px;
+            flex-direction: column;
+            }
+          .navbar{
+            width: 100%;  
+            height: 100%;
+            padding: 0;
+            margin: 0;
+          }
+          .navbar h2{
+            width:100%;
+            height: 25px;
+            font-size: 15px;
+          }
+          .loteria{
+            width: 100%;
+          }
+          .conteiner-details-lot{
+            display: none;
+          }
+          
+    
+ }
 
-@media (min-width: 150.98px)and (max-width: 991.98px) and (orientation:portrait) {
+@media (min-width: 576.98px)and (max-width: 991.98px) and (orientation:portrait) {
 
     body{/*background: green;*/  overflow-y: scroll;
     height: 150%;}
