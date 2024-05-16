@@ -1118,7 +1118,7 @@ function deletedatafile(char){
                 }
             }
             mostrar=loterias.textContent =auxmostrar;
-           // console.log(srtshort)
+         
           
            }else{
             var srt=auxfile
@@ -1142,7 +1142,6 @@ function addDatafileticket(char){
         if(char=="21" || char=="15"){
             
             if(momentoActual.getDay()===6 && char=="15" ){
-                console.log("hoy es lues")
                 let tamaño=arrlotview.length
                 for(i=0;i<arrlot.length-1;i++){
                     arrlotview[tamaño+i]=arrlot[i]+data
@@ -1168,7 +1167,6 @@ function addDatafileticket(char){
             arrlotview[i]=arrlot[i]+data
         }   
     }
-    console.log(arrlotview)
 }
 
 
@@ -1192,7 +1190,6 @@ function deleteDatafileticket(char){
     for(i=0;i<arraux.length;i++){
     arrlotview[i]=arraux[i]
     }
-    console.log(arrlotview)
 }
 
 /*--------------------------------------------------------------------*/
@@ -1207,9 +1204,8 @@ arrlotview.push(data)
 
 }else{
     arrlotview[0]=data
-   // console.log(tamaño+"inicial")
 }
-    console.log(arrlotview)
+
 }
 
 function deleteDataticket(char){
@@ -1226,7 +1222,6 @@ function deleteDataticket(char){
     
     });
 
-    console.log(arrlotview)
 }
 /********************************************* */
 function dataTickectExtra(char){
@@ -1245,7 +1240,6 @@ function dataTickectExtra(char){
      }
      
      arrlotview.splice(0,arrlotview.length)
-     console.log(arrlotview)
      for(i=0;i<arraux.length;i++){
      arrlotview[i]=arraux[i]
      }
@@ -1300,7 +1294,6 @@ function mueveReloj(){
     hora = momentoActual.getHours()
     minuto = momentoActual.getMinutes()
     segundo = momentoActual.getSeconds()
-    console.log()
     horaImprimible = hora + " : " + minuto + " : " + segundo
     
 if(hora<10){
@@ -1355,247 +1348,7 @@ if(hora<10){
 }
 
 /******************************************************************************************* *
-function validateInput(hora,minuto){
 
-    let iniciar=Date("08:15:00")
-    let curren=new Date()
-
-    let time=hora+":"+minuto+" AM"
-    console.log(  curren.toLocaleTimeString())
- 
-
-    if( curren.toLocaleTimeString()>="7:30:00" && !start ){
-        start=true
-        nacional.classList.remove('disable-check-lot')  
-        provincia.classList.remove('disable-check-lot') 
-        corriente.classList.remove('disable-check-lot') 
-        santafe.classList.remove('disable-check-lot') 
-        cordoba.classList.remove('disable-check-lot') 
-        rio.classList.remove('disable-check-lot') 
-        matutino.classList.remove('disable-check-lot')  
-        todos.classList.remove('disable-check-lot') 
-
-         nacional.disabled = false
-         provincia.disabled = false
-         corriente.disabled = false
-         santafe.disabled = false
-         cordoba.disabled = false
-         rio.disabled = false
-         matutino.disabled = false
-         todos.disabled = false
-
-         nacional1.classList.remove('disable-check-lot')  
-         provincia1.classList.remove('disable-check-lot') 
-         corriente1.classList.remove('disable-check-lot') 
-         santafe1.classList.remove('disable-check-lot') 
-         cordoba1.classList.remove('disable-check-lot') 
-         rio1.classList.remove('disable-check-lot') 
-         despertino.classList.remove('disable-check-lot') 
- 
-          nacional1.disabled = false
-          provincia1.disabled = false
-          corriente1.disabled = false
-          santafe1.disabled = false
-          cordoba1.disabled = false
-          rio1.disabled = false
-          despertino.disabled = false
- 
-          nacional2.classList.remove('disable-check-lot')  
-          provincia2.classList.remove('disable-check-lot') 
-          corriente2.classList.remove('disable-check-lot') 
-          santafe2.classList.remove('disable-check-lot') 
-          cordoba2.classList.remove('disable-check-lot') 
-          rio2.classList.remove('disable-check-lot') 
-          mediatarde.classList.remove('disable-check-lot') 
-  
-           nacional2.disabled = false
-           provincia2.disabled = false
-           corriente2.disabled = false
-           santafe2.disabled = false
-           cordoba2.disabled = false
-           rio2.disabled = false
-           mediatarde.disabled = false
- 
- 
-           nacional4.classList.remove('disable-check-lot')  
-           provincia4.classList.remove('disable-check-lot') 
-           corriente4.classList.remove('disable-check-lot') 
-           santafe4.classList.remove('disable-check-lot') 
-           cordoba4.classList.remove('disable-check-lot') 
-           rio4.classList.remove('disable-check-lot') 
-           oro4.classList.remove('disable-check-lot') 
-           noche.classList.remove('disable-check-lot') 
-   
-            nacional4.disabled = false
-            provincia4.disabled = false
-            corriente4.disabled = false
-            santafe4.disabled = false
-            cordoba4.disabled = false
-            rio4.disabled = false
-            oro4.disabled = false
-            noche.disabled = false
- 
-            nacional3.classList.remove('disable-check-lot')  
-            provincia3.classList.remove('disable-check-lot') 
-            corriente3.classList.remove('disable-check-lot') 
-            santafe3.classList.remove('disable-check-lot') 
-            cordoba3.classList.remove('disable-check-lot') 
-            rio3.classList.remove('disable-check-lot') 
-            tarde.classList.remove('disable-check-lot') 
-    
-             nacional3.disabledfalse
-             provincia3.disabled = false
-             corriente3.disabled = false
-             santafe3.disabled = false
-             cordoba3.disabled = false
-             rio3.disabled = false
-             tarde.disabled = false
-
-    }
-
-    if(curren.toLocaleTimeString() >="10:30:00"){
-    //    loterias.innerHTML=""
-        nacional.classList.add('disable-check-lot')  
-        provincia.classList.add('disable-check-lot') 
-        corriente.classList.add('disable-check-lot') 
-        santafe.classList.add('disable-check-lot') 
-        cordoba.classList.add('disable-check-lot') 
-        rio.classList.add('disable-check-lot') 
-        matutino.classList.add('disable-check-lot')  
-        todos.classList.add('disable-check-lot') 
-
-         nacional.disabled = true
-         provincia.disabled = true
-         corriente.disabled = true
-         santafe.disabled = true
-         cordoba.disabled = true
-         rio.disabled = true
-         matutino.disabled = true
-         todos.disabled = true
-
-        nacional.checked=false
-        provincia.checked=false
-        santafe.checked=false
-        cordoba.checked=false
-        corriente.checked=false
-        rio.checked=false
-        todos.checked=false
-        matutino.checked=false
-         
-
-    }
-    if(curren.toLocaleTimeString()>="12:00:00"){
-        nacional1.classList.add('disable-check-lot')  
-        provincia1.classList.add('disable-check-lot') 
-        corriente1.classList.add('disable-check-lot') 
-        santafe1.classList.add('disable-check-lot') 
-        cordoba1.classList.add('disable-check-lot') 
-        rio1.classList.add('disable-check-lot') 
-        despertino.classList.add('disable-check-lot') 
-
-         nacional1.disabled = true
-         provincia1.disabled = true
-         corriente1.disabled = true
-         santafe1.disabled = true
-         cordoba1.disabled = true
-         rio1.disabled = true
-         despertino.disabled = true
-
-         nacional1.checked=false
-         provincia1.checked=false
-         santafe1.checked=false
-         cordoba1.checked=false
-         corriente1.checked=false
-         rio1.checked=false
-         todos.checked=false
-         despertino.checked=false
-
- 
-    }
-    if(curren.toLocaleTimeString()>="15:00:00"){
-        nacional2.classList.add('disable-check-lot')  
-        provincia2.classList.add('disable-check-lot') 
-        corriente2.classList.add('disable-check-lot') 
-        santafe2.classList.add('disable-check-lot') 
-        cordoba2.classList.add('disable-check-lot') 
-        rio2.classList.add('disable-check-lot') 
-        mediatarde.classList.add('disable-check-lot') 
-
-         nacional2.disabled = true
-         provincia2.disabled = true
-         corriente2.disabled = true
-         santafe2.disabled = true
-         cordoba2.disabled = true
-         rio2.disabled = true
-         mediatarde.disabled = true
-
-         nacional2.checked=false
-         provincia2.checked=false
-         santafe2.checked=false
-         cordoba2.checked=false
-         corriente2.checked=false
-         rio2.checked=false
-         todos.checked=false
-         mediatarde.checked=false
-    }
-    if(curren.toLocaleTimeString()>="18:0"){
-        nacional3.classList.add('disable-check-lot')  
-        provincia3.classList.add('disable-check-lot') 
-        corriente3.classList.add('disable-check-lot') 
-        santafe3.classList.add('disable-check-lot') 
-        cordoba3.classList.add('disable-check-lot') 
-        rio3.classList.add('disable-check-lot') 
-        tarde.classList.add('disable-check-lot') 
-
-         nacional3.disabled = true
-         provincia3.disabled = true
-         corriente3.disabled = true
-         santafe3.disabled = true
-         cordoba3.disabled = true
-         rio3.disabled = true
-         tarde.disabled = true
-
-         nacional3.checked=false
-        provincia3.checked=false
-        santafe3.checked=false
-        cordoba3.checked=false
-        corriente3.checked=false
-        rio3.checked=false
-        todos.checked=false
-        tarde.checked=false
-
-    }
-    if(curren.toLocaleTimeString()>="20:0"){
-        nacional4.classList.add('disable-check-lot')  
-        provincia4.classList.add('disable-check-lot') 
-        corriente4.classList.add('disable-check-lot') 
-        santafe4.classList.add('disable-check-lot') 
-        cordoba4.classList.add('disable-check-lot') 
-        rio4.classList.add('disable-check-lot') 
-        oro4.classList.add('disable-check-lot') 
-        noche.classList.add('disable-check-lot') 
-
-         nacional4.disabled = true
-         provincia4.disabled = true
-         corriente4.disabled = true
-         santafe4.disabled = true
-         cordoba4.disabled = true
-         rio4.disabled = true
-         oro4.disabled = true
-         noche.disabled = true
-         start=false
-
-         nacional4.checked=false
-         provincia4.checked=false
-         santafe4.checked=false
-         cordoba4.checked=false
-         corriente4.checked=false
-         rio4.checked=false
-         oro4.checked=false
-         todos.checked=false
-         noche.checked=false
-    }
-}**** */
 /***************************VALIDTE COMPLET*************************************** */
 function validAll(){
 
@@ -1732,7 +1485,6 @@ if(arrlotview!=0){
 
     if( numeroR && posicionR){
         if(numero && posicion && importe){
-            console.log("hola") 
             auxiliarNumero=numero
             auxiliarPosicion=posicion
             auxiliarImporte=importe
@@ -1754,7 +1506,6 @@ if(arrlotview!=0){
     }else if( numero && posicion && importe){
         
         if(numeroR==0 && posicionR==0 ){
-            console.log("hola") 
             auxiliarNumero=numero
             auxiliarPosicion=posicion
             auxiliarImporte=importe
@@ -1971,9 +1722,6 @@ if(auxviewdatalot!=viewdatalot){
    
     h4PL.innerHTML=parseFloat(importe).toFixed(2);
     C++
-   
-    console.log(total)
-
     total=total+(importe*(parseInt(arrlotview.length, 10)))
 
 
@@ -2124,7 +1872,6 @@ function imprimirElemento(elemento) {
                 var str = auxiliarNumero.toString();
                 str = str.slice(1);
                 auxiliarNumero=str
-                console.log(auxiliarNumero);
                 numero=auxiliarNumero
                 posicion=auxiliarPosicion
                 importe=auxiliarImporte

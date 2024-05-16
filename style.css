@@ -251,8 +251,6 @@ html,body{
     justify-content: start;
     font-size: 100%;
 }
-
-
   .mycheck {
     width: 20px;
     height: 20px;
@@ -319,6 +317,7 @@ input::placeholder{
 }
 .imp{
     width: 95%;
+    margin: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -467,7 +466,7 @@ input::placeholder{
 @media (min-width: 150.98px)and (max-width: 991.98px) and (orientation:portrait) {
 
     body{/*background: green;*/  overflow-y: scroll;
-    height: 150%;}
+    height: 200%;}
 
     .conteiner{
         flex-direction: column;
@@ -481,6 +480,7 @@ input::placeholder{
   
     .conteiner-Ticket{
         width: 100%;
+        height: 100%;
     }
     .calendar i,.clock i,.navbar input{
         display: none;
