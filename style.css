@@ -31,11 +31,20 @@ html,body{
 
 .navbar{
     width: 33.33%;
-    height: 80%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.navbar h2{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .conteiner-main{
     width: 50%;
@@ -208,23 +217,37 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 70%;
-   cursor: pointer;
+    font-size: 12px;
+    cursor: pointer;
     margin-top: 3%;
 }
 
 .btn h2{
-    width:80%;
+    width:60%;
     height:60%;
     display: flex;
     justify-content: center;
+  
     align-items: center;
     border-radius: 30px;
     color:#ffffff;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background-color:  rgb(33, 33, 202, 0.8);
     transition: all 0.5s ease-in-out;   
-    font-size: 100%;
+
+}
+.btn h3{
+    width:30%;
+    height:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color:#000000;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color:  #ccc;
+    margin-left: 5px;
+    transition: all 0.5s ease-in-out;   
 }
 .conteiner-details-lot{
     width: 80%;
@@ -308,12 +331,13 @@ input::placeholder{
 }
 /*******************************************************/
 .conteiner-imp{
-    width: 50%;
+    width:300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #fff;
     display: flex;
+    margin-top: 10px;
 }
 .imp{
     width: 95%;
@@ -380,18 +404,29 @@ input::placeholder{
    border-top: 3px solid black;
 }
 .moves-total-pay {
-    width: 95%;
+    width: 100%;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .moves-total-pay h2{
-    width: 40%;
+    width: 70%;
     color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0%;
+    padding: 0%;
+}
+.moves-total-pay h3{
+    max-width: 30%;
+    color: black;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
     margin: 0%;
     padding: 0%;
 }
@@ -421,23 +456,25 @@ input::placeholder{
     align-items: center;
 }
 .conteiner-Ticket{
-    width: 50%;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow-y: auto;   
+   
+}
+.btn-reset{
+    width:80%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: auto;   
-}
-.btn-reset{
-    width:80%;
-    height: 55%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color:  rgb(33, 33, 202, 0.8);
     border: 1px solid white;
     transition: all 0.55s ease-in-out;
+   
 }
 .btn-reset h2{
     width: 100%;
@@ -445,13 +482,19 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 20px;
 }
 
-.btn-reset:hover{
+.btn-reset:hover, .btn h2:hover{
     background-color:  rgb(255, 255, 255);
     color: rgb(33, 33, 202);
     border: 1px solid rgb(33, 33, 202);
+    cursor: pointer;
+}
+.btn h3:hover{
+    background-color:  rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -465,8 +508,17 @@ input::placeholder{
 
 @media (min-width: 150.98px)and (max-width: 991.98px) and (orientation:portrait) {
 
-    body{/*background: green;*/  overflow-y: scroll;
+    body{overflow-y: scroll;
     height: 200%;}
+    .btn-reset {
+       
+        padding: 5px;
+        border: 1px solid #fff;
+      }
+      .conteiner-navbar{
+        width: 50%;
+      }
+
 
     .conteiner{
         flex-direction: column;
@@ -474,14 +526,25 @@ input::placeholder{
     .conteiner-main{
         width: 100%;
     }
-    .conteiner-imp{
-        width: 60%;
+    .title{
+        font-size: 10px;
     }
-  
+    .conteiner-all label {
+        font-size: 10px;
+    }
+    .input-hour label{
+        font-size: 10px;
+    }
+    .conteiner-move-title , .move{
+        font-size: 12px;
+    }
+
     .conteiner-Ticket{
         width: 100%;
         height: 100%;
+      
     }
+
     .calendar i,.clock i,.navbar input{
         display: none;
     }
@@ -506,14 +569,17 @@ input::placeholder{
   .conteiner-details-lot{
     display: none;
   }
+  .btn{
+    font-size: 10px;
+}
+
   
  }
 /*landscape*/
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
  /*   body{background: rgb(11, 186, 199);}*/
    
-   .conteiner-imp{
-    width: 80%;
+  
 }
 .conteiner-details-lot{
     display: none;
@@ -525,16 +591,15 @@ input::placeholder{
     padding: 0; 
  }
   .btn-reset {
-    width:90%;
-    height: 40%;
+    width:100%;
+    height: 50%;
+    margin: 0;
   }
   .btn-reset h2{
-    font-size: 9px;
+    font-size: 12px;
+    margin: 0;
   }
-  .calendar i,.clock i{
-    display: none;
-}
+
 .myclock{
     font-size: 12px;
-}
 }

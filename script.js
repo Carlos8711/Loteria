@@ -1641,7 +1641,8 @@ if(auxviewdatalot!=viewdatalot){
     
     h4NL.style.width="20%"
     h4NL.style.color="black"
-    h4NL.style.fontSize="16px"
+    h4NL.style.fontSize="14px"
+   // h4NL.style.backgroundColor="red"
     h4NL.style.margin="0%"
     h4NL.style.display="flex"
     h4NL.style.justifyContent="center"
@@ -1650,40 +1651,42 @@ if(auxviewdatalot!=viewdatalot){
 
    
 
-    h4POL.style.width="15%"
+    h4POL.style.width="13%"
     h4POL.style.color="black"
-    h4POL.style.fontSize="16px"
+    h4POL.style.fontSize="14px"
     h4POL.style.margin="0%"
     h4POL.style.display="flex"
+   // h4POL.style.backgroundColor="yellow"
     h4POL.style.justifyContent="center"
     h4POL.style.alignItems="end"
     h4POL.style.flexDirection="column"
 
-    h4PL.style.width="25%"
+    h4PL.style.width="40%"
     h4PL.style.color="black"
-    h4PL.style.fontSize="16px"
+    h4PL.style.fontSize="14px"
     h4PL.style.margin="0%"
     h4PL.style.display="flex"
+   // h4PL.style.backgroundColor="blue"
     h4PL.style.justifyContent="center"
     h4PL.style.alignItems="end"
     h4PL.style.flexDirection="column"
 
-    h4NR.style.width="20%"
+    h4NR.style.width="13%"
     h4NR.style.color="black"
-    h4NR.style.fontSize="16px"
+    h4NR.style.fontSize="14px"
     h4NR.style.margin="0%"
     h4NR.style.display="flex"
-    //h4NR.style.backgroundColor="pink"
+   // h4NR.style.backgroundColor="pink"
     h4NR.style.justifyContent="center"
     h4NR.style.alignItems="end"
     h4NR.style.flexDirection="column"
 
-    h4PR.style.width="20%"
+    h4PR.style.width="13%"
     h4PR.style.color="black"
-    h4PR.style.fontSize="16px"
+    h4PR.style.fontSize="14px"
     h4PR.style.margin="0%"
     h4PR.style.display="flex"
-    //h4PR.style.backgroundColor="red"
+   // h4PR.style.backgroundColor="red"
     h4PR.style.justifyContent="center"
     h4PR.style.alignItems="end"
     h4PR.style.flexDirection="column"
@@ -1747,41 +1750,43 @@ if(auxviewdatalot!=viewdatalot){
     conteinerMNT.appendChild(div)
     divPL.style.width="100%"
     divPL.style.color="black"
-    divML.style.fontSize="16px"
+    divML.style.fontSize="14px"
     divPL.style.display="flex"
 
     h4NL.style.width="20%"
     h4NL.style.color="black"
-    h4NL.style.fontSize="16px"
+    h4NL.style.fontSize="14px"
     h4NL.style.backgroundColor="white"
     h4NL.style.margin="0%"
     h4NL.style.display="flex"
+ 
     h4NL.style.flexDirection="column"
     h4NL.style.justifyContent="center"
     h4NL.style.alignItems="end"
 
-    h4PL.style.width="25%"
+    h4PL.style.width="40%"
     h4PL.style.color="black"
-    h4PL.style.fontSize="16px"
+    h4PL.style.fontSize="14px"
     h4PL.style.margin="0%"
     h4PL.style.display="flex"
+
     h4PL.style.flexDirection="column"
     h4PL.style.justifyContent="center"
     h4PL.style.alignItems="end"
 
 
-    h4POL.style.width="15%"
+    h4POL.style.width="13%"
     h4POL.style.color="black"
-    h4POL.style.fontSize="16px"
+    h4POL.style.fontSize="14px"
     h4POL.style.margin="0%"
     h4POL.style.display="flex"
     h4POL.style.justifyContent="center"
     h4POL.style.alignItems="end"
     h4POL.style.flexDirection="column"
 
-    h4NR.style.width="20%"
+    h4NR.style.width="13%"
     h4NR.style.color="black"
-    h4NR.style.fontSize="16px"
+    h4NR.style.fontSize="14px"
     h4NR.style.margin="0%"
     h4NR.style.display="flex"
    // h4NR.style.backgroundColor="pink"
@@ -1789,12 +1794,12 @@ if(auxviewdatalot!=viewdatalot){
     h4NR.style.alignItems="end"
     h4NR.style.flexDirection="column"
 
-    h4PR.style.width="20%"
+    h4PR.style.width="13%"
     h4PR.style.color="black"
-    h4PR.style.fontSize="16px"
+    h4PR.style.fontSize="14px"
     h4PR.style.margin="0%"
     h4PR.style.display="flex"
-    //h4PR.style.backgroundColor="red"
+   // h4PR.style.backgroundColor="red"
     h4PR.style.justifyContent="center"
     h4PR.style.alignItems="end"
     h4PR.style.flexDirection="column"
@@ -1858,6 +1863,7 @@ function imprimirElemento(elemento) {
 
 
   document.addEventListener("keydown", function(event) {
+
     let viewdatalot=arrlotview.join(" ")
 
     if (event.key === "+") {
@@ -1895,8 +1901,38 @@ function imprimirElemento(elemento) {
     }
     
   }
-  
  );
+ function bajada(){
+
+    let viewdatalot=arrlotview.join(" ")
+
+   
+        number.blur()
+        if(auxviewdatalot!=viewdatalot){
+
+        }
+        else{
+            
+            if(auxiliarNumero.length<=4 && auxiliarNumero.length>2 ){
+                
+                var str = auxiliarNumero.toString();
+                str = str.slice(1);
+                auxiliarNumero=str
+                numero=auxiliarNumero
+                posicion=auxiliarPosicion
+                importe=auxiliarImporte
+                viewticketlot()
+                numero=0
+                posicion=0
+                importe=0  
+
+            }else{
+            
+            }
+        }
+       
+     
+ }
   
 number.addEventListener('keydown', inputCharacters);
 number.addEventListener('click', inputCharacters);
